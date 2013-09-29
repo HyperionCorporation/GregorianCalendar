@@ -1,0 +1,5 @@
+c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\obj\Debug\DoomsdayAlgorithm.csprojResolveAssemblyReference.cache
+c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\bin\Debug\DoomsdayAlgorithm.dll
+c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\bin\Debug\DoomsdayAlgorithm.pdb
+c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\obj\Debug\DoomsdayAlgorithm.dll
+c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\obj\Debug\DoomsdayAlgorithm.pdb
