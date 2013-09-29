@@ -5,10 +5,19 @@ using System.Text;
 
 namespace GregorianCalendar
 {
+    /// <summary>
+    /// Implemenetation of Conway's Doomsday Rule. Used to calculate what day of the week any given date falls on.
+    /// </summary>
     public static class DoomsdayCalculator
     {
  
-        //Return the day of the week a particular day falls on in a given year
+        /// <summary>
+        ///  Return the day of the week a particular day falls on in a given year
+        /// </summary>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <param name="year"></param>
+        /// <returns></returns>
         public static Calendar.DaysOfWeek getDayOfWeek(int month, int day, int year)
         {
             //Find that year's doomsday
@@ -40,7 +49,11 @@ namespace GregorianCalendar
             }
         }
 
-
+        /// <summary>
+        /// Determine if a given year is a leap year
+        /// </summary>
+        /// <param name="year"></param>
+        /// <returns></returns>
         private static bool isLeapYear(int year)
         {
             if (year % 4 == 0)
@@ -55,27 +68,61 @@ namespace GregorianCalendar
             return false;
         }
 
+       /// <summary>
+       /// Gets the doomsday for a given year
+       /// </summary>
+       /// <param name="year"></param>
+       /// <returns></returns>
         private static Calendar.DaysOfWeek getYearsDoomsday(int year)
         {
             string yearString = Convert.ToString(year).Substring(2);
             int lastTwo = Convert.ToInt16(yearString);
+            Calendar.DaysOfWeek returnDay;
 
             int offSet = (lastTwo + (lastTwo / 4)) % 7;
-
+             
             if (year >= 1900 && year < 2000)
             {
-                return Calendar.DaysOfWeek.WEDNESDAY + offSet;
+                //Prevent overflow. Brings returnday back to the front of the enum.
+                if ((int)Calendar.DaysOfWeek.WEDNESDAY + offSet > 7)
+                {
+                    returnDay = (Calendar.DaysOfWeek)( ((int)Calendar.DaysOfWeek.WEDNESDAY + offSet) - 7);
+                }
+
+                else
+                {
+                    returnDay = Calendar.DaysOfWeek.WEDNESDAY + offSet;
+                }
+                return returnDay;
             }
 
             else if (year >= 2000 && year < 3000)
             {
-                return Calendar.DaysOfWeek.TUESDAY + offSet;
+                
+                if ((int)Calendar.DaysOfWeek.TUESDAY + offSet > 7)
+                {
+                    returnDay = (Calendar.DaysOfWeek)(((int)Calendar.DaysOfWeek.TUESDAY + offSet) - 7);
+                }
+
+                else
+                {
+                    returnDay = Calendar.DaysOfWeek.TUESDAY + offSet;
+                }
+
+                return returnDay;
+
             }
 
             else return Calendar.DaysOfWeek.MONDAY; 
 
         }
 
+        /// <summary>
+        /// Gets the months doomsday
+        /// </summary>
+        /// <param name="month"></param>
+        /// <param name="year"></param>
+        /// <returns></returns>
         private static int getMonthsDoomsday(int month, int year)
         {
             Calendar.MonthsOfYear monthOfYear= (Calendar.MonthsOfYear) month;
@@ -165,7 +212,7 @@ namespace GregorianCalendar
 
     public static class Calendar
     {
-
+        //Not used right now. Need to convert to equivalent day of week.
         public enum CenturyDoomsday
         {
             TWENTIETH = DaysOfWeek.WEDNESDAY,

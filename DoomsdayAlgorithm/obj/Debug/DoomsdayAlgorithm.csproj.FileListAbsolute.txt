@@ -3,3 +3,4 @@ c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayA
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\bin\Debug\DoomsdayAlgorithm.pdb
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\obj\Debug\DoomsdayAlgorithm.dll
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\obj\Debug\DoomsdayAlgorithm.pdb
+C:\Users\Bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\DoomsdayAlgorithm\bin\Debug\DoomsdayAlgorithm.XML

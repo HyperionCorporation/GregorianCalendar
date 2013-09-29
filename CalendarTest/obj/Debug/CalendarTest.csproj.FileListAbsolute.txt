@@ -6,3 +6,4 @@ c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarT
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarTest\bin\Debug\DoomsdayAlgorithm.pdb
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarTest\obj\Debug\CalendarTest.exe
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarTest\obj\Debug\CalendarTest.pdb
+C:\Users\Bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarTest\bin\Debug\DoomsdayAlgorithm.xml
