@@ -7,3 +7,12 @@ c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarT
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarTest\obj\Debug\CalendarTest.exe
 c:\users\bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarTest\obj\Debug\CalendarTest.pdb
 C:\Users\Bryan\documents\visual studio 2012\Projects\DoomsdayAlgorithm\CalendarTest\bin\Debug\DoomsdayAlgorithm.xml
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\bin\Debug\CalendarTest.exe.config
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\obj\Debug\CalendarTest.exe
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\obj\Debug\CalendarTest.pdb
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\bin\Debug\CalendarTest.exe
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\bin\Debug\CalendarTest.pdb
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\bin\Debug\DoomsdayAlgorithm.dll
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\bin\Debug\DoomsdayAlgorithm.pdb
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\bin\Debug\DoomsdayAlgorithm.xml
+C:\Users\Bryan\Dropbox\CSharp\DoomsdayAlgorithm\CalendarTest\obj\Debug\CalendarTest.csprojResolveAssemblyReference.cache

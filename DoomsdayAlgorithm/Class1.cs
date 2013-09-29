@@ -20,6 +20,7 @@ namespace GregorianCalendar
         /// <returns></returns>
         public static Calendar.DaysOfWeek getDayOfWeek(int month, int day, int year)
         {
+            Calendar.DaysOfWeek rawDay;
             //Find that year's doomsday
             Calendar.DaysOfWeek yearsDoomsday = getYearsDoomsday(year);
             
@@ -34,19 +35,39 @@ namespace GregorianCalendar
                 offSet -= 7;
             }
 
-            int rawDay = (int)yearsDoomsday + offSet;
-
-            if (rawDay > 7)
+            if (offSet < 0)
             {
-                int change = 7 - rawDay;
-                Calendar.DaysOfWeek dayWeek = yearsDoomsday + change;
-                return dayWeek;
+                rawDay = yearsDoomsday - (-offSet);
             }
-
             else
             {
-                return (Calendar.DaysOfWeek)rawDay;
+                rawDay = yearsDoomsday + offSet;
             }
+           
+            return checkRollover(rawDay);
+            
+        }
+
+        /// <summary>
+        /// Checks for a rollover for the days of the week
+        /// </summary>
+        /// <param name="day"></param>
+        /// <returns></returns>
+        private static Calendar.DaysOfWeek checkRollover(Calendar.DaysOfWeek day)
+        {
+            if ((int)day > 7)
+            {
+                int returnDay = (int)day - 7;
+                return (Calendar.DaysOfWeek)returnDay;
+            }
+
+            else if ((int)day < 1)
+            {
+                int returnDay = (int)day + 7;
+                return (Calendar.DaysOfWeek)returnDay;
+            }
+
+            return day;
         }
 
         /// <summary>
